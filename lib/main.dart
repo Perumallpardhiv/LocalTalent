@@ -20,7 +20,7 @@ class MyApp extends StatelessWidget {
         pageTransitionsTheme: PageTransitionsTheme(),
         primarySwatch: Colors.blue,
       ),
-      home: onboarding1(),
+      home: homePage(),
     );
   }
 }

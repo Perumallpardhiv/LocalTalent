@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:local_talent/homeScreen.dart';
 
 class register extends StatefulWidget {
   const register({super.key});
@@ -76,7 +77,13 @@ class _registerState extends State<register> {
             ),
             RawMaterialButton(
               constraints: BoxConstraints(minHeight: 40),
-              onPressed: () {},
+              onPressed: () {
+                Navigator.pushAndRemoveUntil(
+                  context,
+                  MaterialPageRoute(builder: (context) => homePage()),
+                  (route) => false,
+                );
+              },
               fillColor: Color(0xff007aff),
               splashColor: Color(0xff007aff),
               shape: RoundedRectangleBorder(
