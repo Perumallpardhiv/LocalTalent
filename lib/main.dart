@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:local_talent/homeScreen.dart';
+import 'package:local_talent/jobDetail.dart';
 import 'package:local_talent/onboarding1.dart';
 import 'package:local_talent/onboarding2.dart';
 import 'package:local_talent/auth.dart';
@@ -20,7 +21,7 @@ class MyApp extends StatelessWidget {
         pageTransitionsTheme: PageTransitionsTheme(),
         primarySwatch: Colors.blue,
       ),
-      home: profilePage(),
+      home: jobDetail(),
     );
   }
 }
