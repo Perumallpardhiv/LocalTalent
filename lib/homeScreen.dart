@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:local_talent/items.dart';
+import 'package:local_talent/jobDetail.dart';
 import 'package:local_talent/profilePage.dart';
 
 class homePage extends StatefulWidget {
@@ -252,7 +253,14 @@ class _homePageState extends State<homePage> {
                         return Padding(
                           padding: const EdgeInsets.all(8),
                           child: GestureDetector(
-                            onTap: () {},
+                            onTap: () {
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                  builder: (context) => jobDetail(),
+                                ),
+                              );
+                            },
                             child: Container(
                               padding: const EdgeInsets.all(10),
                               width: 160,
@@ -395,7 +403,14 @@ class _homePageState extends State<homePage> {
                     itemCount: NewJobs.length,
                     itemBuilder: (context, index) {
                       return GestureDetector(
-                        onTap: () {},
+                        onTap: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => jobDetail(),
+                            ),
+                          );
+                        },
                         child: Container(
                           padding: const EdgeInsets.all(10),
                           child: Column(
@@ -534,7 +549,14 @@ class _homePageState extends State<homePage> {
                         return Padding(
                           padding: const EdgeInsets.all(8),
                           child: GestureDetector(
-                            onTap: () {},
+                            onTap: () {
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                  builder: (context) => jobDetail(),
+                                ),
+                              );
+                            },
                             child: Container(
                               padding: const EdgeInsets.all(10),
                               width: 160,
@@ -677,7 +699,14 @@ class _homePageState extends State<homePage> {
                     itemCount: ContractorJobs.length,
                     itemBuilder: (context, index) {
                       return GestureDetector(
-                        onTap: () {},
+                        onTap: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => jobDetail(),
+                            ),
+                          );
+                        },
                         child: Container(
                           padding: const EdgeInsets.all(10),
                           child: Column(

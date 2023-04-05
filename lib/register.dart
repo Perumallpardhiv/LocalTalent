@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:local_talent/conditions.dart';
 import 'package:local_talent/homeScreen.dart';
 
 class register extends StatefulWidget {
@@ -117,7 +118,14 @@ class _registerState extends State<register> {
                 ),
                 SizedBox(width: 10),
                 TextButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => conditions(),
+                      ),
+                    );
+                  },
                   child: Text(
                     'conditions',
                     textAlign: TextAlign.center,
