@@ -3,7 +3,7 @@ import 'package:local_talent/homeScreen.dart';
 import 'package:local_talent/onboarding1.dart';
 import 'package:local_talent/onboarding2.dart';
 import 'package:local_talent/auth.dart';
-
+import 'package:local_talent/profilePage.dart';
 void main() {
   runApp(const MyApp());
 }
@@ -20,7 +20,7 @@ class MyApp extends StatelessWidget {
         pageTransitionsTheme: PageTransitionsTheme(),
         primarySwatch: Colors.blue,
       ),
-      home: homePage(),
+      home: profilePage(),
     );
   }
 }

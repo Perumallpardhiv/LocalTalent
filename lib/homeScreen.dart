@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:local_talent/items.dart';
+import 'package:local_talent/profilePage.dart';
 
 class homePage extends StatefulWidget {
   const homePage({super.key});
@@ -35,40 +36,56 @@ class _homePageState extends State<homePage> {
                 child: Row(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    CircleAvatar(
-                      child: Container(
-                        decoration: const BoxDecoration(
-                          image: DecorationImage(
-                            fit: BoxFit.cover,
-                            image: AssetImage(
-                              'assets/profile1.png',
+                    GestureDetector(
+                      onTap: () {
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => profilePage()));
+                      },
+                      child: CircleAvatar(
+                        child: Container(
+                          decoration: const BoxDecoration(
+                            image: DecorationImage(
+                              fit: BoxFit.cover,
+                              image: AssetImage(
+                                'assets/profile1.png',
+                              ),
                             ),
                           ),
                         ),
                       ),
                     ),
-                    Padding(
-                      padding: const EdgeInsets.symmetric(horizontal: 10),
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Text(
-                            'Hello',
-                            style: GoogleFonts.acme(
-                              fontSize: 13,
-                              fontWeight: FontWeight.w400,
-                              color: const Color(0xff000000),
+                    GestureDetector(
+                      onTap: () {
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => profilePage()));
+                      },
+                      child: Padding(
+                        padding: const EdgeInsets.symmetric(horizontal: 10),
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Text(
+                              'Hello',
+                              style: GoogleFonts.acme(
+                                fontSize: 13,
+                                fontWeight: FontWeight.w400,
+                                color: const Color(0xff000000),
+                              ),
                             ),
-                          ),
-                          Text(
-                            'Gagan Jha.',
-                            style: GoogleFonts.acme(
-                              fontSize: 20,
-                              fontWeight: FontWeight.w400,
-                              color: const Color(0xff000000),
+                            Text(
+                              'Gagan Jha.',
+                              style: GoogleFonts.acme(
+                                fontSize: 20,
+                                fontWeight: FontWeight.w400,
+                                color: const Color(0xff000000),
+                              ),
                             ),
-                          ),
-                        ],
+                          ],
+                        ),
                       ),
                     ),
                   ],
